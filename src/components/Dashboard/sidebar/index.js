@@ -7,7 +7,7 @@ const Sidebar = () => {
       <div className="aside">
         <div className="top">
           <div className="logo">
-            <img src="logoo.png" />
+            <img src="loogo.jpg" />
             <h2>
               K<span className="danger">D</span>
             </h2>

@@ -1,5 +1,7 @@
 .right {
+  width: 350px;
   margin-top: 1.4rem;
+  margin-right: 2rem;
 }
 
 .right .top {
@@ -51,27 +53,91 @@
 }
 
 .right .recent-updated {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
-.right .recent-updated h2{
-    margin-bottom: 0.8rem;
-}
-
-.right .recent-updated .updates{
-    background: var(--color-white);
-    padding: var(--card-padding);
-    border-radius: var(--card-border-radius);
-    box-shadow: var(--box-shadow);
-    transition: all 300ms ease;
+.right .recent-updated h2 {
+  margin-bottom: 0.8rem;
 }
 
-.right .recent-updated .updates:hover{
+.right .recent-updated .updates {
+  background: var(--color-white);
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--box-shadow);
+  transition: all 300ms ease;
+}
+
+.right .recent-updated .updates:hover {
+  box-shadow: none;
+}
+
+.right .recent-updated .updates .update {
+  display: grid;
+  grid-template-columns: 2.6rem auto;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.right .daily {
+  margin-top: 2rem;
+}
+.right .daily h2 {
+  margin-bottom: 0.8rem;
+}
+.right .daily .item {
+  background: var(--color-white);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.7rem;
+  padding: 1.4rem var(--card-padding);
+  border-radius: var(--border-radius-3);
+  box-shadow: var(--box-shadow);
+  transition: all 300ms ease;
+}
+
+.right .daily .item:hover {
     box-shadow: none;
 }
+.right .daily .item .right{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 0;
+    width: 100%;
+}
 
-.right .recent-updated .updates .update{
-    display: grid;
-    grid-template-columns: 2.6rem auto;
-    gap: 1rem;
-    margin-bottom: 1rem;
+.right .daily .item .icon {
+    padding: 0.6rem;
+    color: var(--color-white);
+    border-radius: 50%;
+    background: var(--color-primary);
+    display: flex;
+}
+
+.right .daily .item.patient .icon {
+    background: var(--color-success);
+}
+
+.right .daily .item.rod .icon {
+    background: var(--color-orange);
+}
+
+.right .daily .add-record {
+    background-color: transparent;
+    border: 2px dashed var(--color-info-dark);
+    color: var(--color-info-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.right .daily .add-record div{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.right .daily .add-record div h3{
+    font-weight: 600;
 }
