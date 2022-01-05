@@ -4,7 +4,7 @@ import Chart from "react-apexcharts";
 const Charts = () => {
   const [state, setstate] = useState({
     options: {
-        colors:["#7380ec" ,"#ff7782" ,"#41f1b6"],
+      colors: ["#7380ec", "#ff7782", "#41f1b6"],
       chart: {
         id: "basic-bar",
       },
@@ -29,16 +29,13 @@ const Charts = () => {
   });
   return (
     <div className="chart">
+      <h1>Actions Charts</h1>
       <div className="row">
         <div className="mixed-chart">
-          <Chart
-            options={state.options}
-            series={state.series}
-            type="line"
-            width="500"
-          />
+          <Chart options={state.options} series={state.series} type="area" />
         </div>
       </div>
     </div>
   );
 };
+export default Charts;

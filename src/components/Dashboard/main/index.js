@@ -1,5 +1,6 @@
 import React from "react";
 import "./Style/style.css";
+import Charts from "../Chart";
 
 const Main = () => {
   return (
@@ -64,6 +65,7 @@ const Main = () => {
           <small className="text-muted">Last 4days</small>
         </div>
       </div>
+      <Charts/>
     </div>
   );
 };
