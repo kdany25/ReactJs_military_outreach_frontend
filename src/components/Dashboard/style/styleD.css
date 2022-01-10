@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons+Sharp");
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
 :root {
   --color-primary: #7380ec;
   --color-danger: #ff7782;
@@ -60,7 +61,6 @@ body {
   display: grid;
   gap: 1.8rem;
   grid-template-columns: auto;
-  /* border: 2px solid blue; */
   background: var(--color-white);
   padding-right: 4rem;
 }
