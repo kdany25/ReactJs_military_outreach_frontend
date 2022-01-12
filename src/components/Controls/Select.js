@@ -10,7 +10,7 @@ export default function Select() {
   const { name, label, value, onChange, options } = props;
   return (
     <FormControl variant="outlined">
-      <InputLabel>label</InputLabel>
+      <InputLabel>{label}</InputLabel>
       <MuiSelect label={label} name={name} value={value} onChange={onChange}>
         <MenuItem value="">none</MenuItem>
         {options.map((item) => (
