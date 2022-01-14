@@ -1,0 +1,222 @@
+.insights {
+  display: flex;
+  gap: 1rem;
+  margin-left: 3rem;
+}
+
+.insights > div {
+  background: var(--color-white);
+  padding: 15px 40px;
+  border-radius: var(--card-border-radius);
+  margin-top: 1rem;
+  box-shadow: var(--box-shadow);
+  transition: all 300ms ease;
+}
+.insights > div:hover {
+  box-shadow: none;
+}
+
+.insights > div span {
+  background: var(--color-primary);
+  padding: 0.5rem;
+  border-radius: 50%;
+  color: var(--color-white);
+  font-size: 2rem;
+  margin-left: 10rem;
+}
+
+.insights > div.med span {
+  background: var(--color-success);
+}
+
+.insights > div.road span {
+  background: var(--color-warning);
+}
+
+.insights > div .middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.insights h3 {
+  margin: 1rem 0 0.6rem;
+  font-size: 1rem;
+}
+
+.insights .progress .number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.insights small {
+  display: block;
+}
+.chart {
+  width: 60%;
+  margin-left: 2rem;
+}
+.chart h2 {
+  text-align: center;
+}
+.second {
+  display: flex;
+  margin-top: 3rem;
+}
+
+.rights {
+  width: 30%;
+  margin-right: 2rem;
+  margin-top: 0.5rem;
+}
+.rights .daily {
+  margin-top: 2rem;
+}
+.rights .daily h2 {
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+.rights .daily .item {
+  background: var(--color-white);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.7rem;
+  padding: 2rem var(--card-padding);
+  border-radius: var(--border-radius-3);
+  box-shadow: var(--box-shadow);
+  transition: all 300ms ease;
+}
+
+.rights .daily .item:hover {
+  box-shadow: none;
+}
+.rights .daily .item .right {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin: 0;
+  width: 100%;
+}
+
+
+
+
+.rights .daily .item .icon {
+  padding: 0.5rem;
+  color: var(--color-white);
+  border-radius: 50%;
+  background: var(--color-primary);
+  display: flex;
+}
+
+.rights .daily .item.patient .icon {
+  background: var(--color-success);
+}
+
+.rights .daily .item.rod .icon {
+  background: var(--color-success);
+}
+
+.rights .daily .add-records {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+}
+.rights .daily .add-record div {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.rights .daily .add-record div h3 {
+  font-weight: 600;
+}
+
+.bar .progress-line {
+  position: relative;
+  border-radius: 10px;
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  transform: scaleX(0);
+  transform-origin: left;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05),
+    0px 1px rgba(255, 255, 255, 0.8);
+ animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+.bar .progress-line span {
+  height: 100%;
+  width: 80%;
+  background: var(--color-primary);
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+    100%{
+        transform: scaleX(1);
+    }
+}
+.bar .progress-line.one span {
+    width: 75%;
+}
+.bar .progress-line.two span {
+  width: 87%;
+}
+.bar .progress-line.three span {
+  width: 67%;
+}
+.bar .progress-line span::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 10px;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: var(--color-danger);
+  opacity: 0;
+  animation: showtext2 0.5s 1.5s linear forwards ;
+  transform: rotate(90deg);
+}
+.bar .progress-line span::after {
+    position: absolute;
+    content: "80%";
+    right: 0;
+    top: 14px;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    font-weight: 500;
+    background: var(--color-danger);
+    padding: 1px 8px;
+    border-radius: 3px;
+    opacity: 0;
+  animation: showtext2 0.5s 1.5s linear forwards ;
+  }
+  @keyframes showtext2 {
+      100%{
+          opacity: 1;
+      }
+      
+  }
+
+  .bar .progress-line.one span::after{
+      content: "75%";
+  }
+  .bar .progress-line.two span::after{
+    content: "87%";
+}
+.bar .progress-line.three span::after{
+    content: "67%";
+}
