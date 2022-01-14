@@ -23,18 +23,18 @@ const sidebarLayout = () => {
           </a>
 
           <a href="#">
-            <span class="material-icons-sharp">update</span>
-            <h3>Update</h3>
+            <span class="material-icons-sharp">health_and_safety</span>
+            <h3>Health</h3>
           </a>
 
           <a href="#">
-            <span class="material-icons-sharp">fact_check</span>
-            <h3>Actions</h3>
+            <span class="material-icons-sharp">apartment</span>
+            <h3>Houses</h3>
           </a>
 
           <a href="#">
-            <span class="material-icons-sharp">insights</span>
-            <h3>Analytics</h3>
+            <span class="material-icons-sharp">alt_route</span>
+            <h3>Other activities</h3>
           </a>
 
           <a href="#">
@@ -43,14 +43,17 @@ const sidebarLayout = () => {
           </a>
 
           <a href="#">
+            <span class="material-icons-sharp">contact_mail</span>
+            <h3>Contact Us</h3>
+          </a>
+
+          <a href="#">
             <span class="material-icons-sharp">logout</span>
             <h3>Logout</h3>
           </a>
         </div>
-        </div>
+      </div>
     </div>
-    
-
   );
 };
 
