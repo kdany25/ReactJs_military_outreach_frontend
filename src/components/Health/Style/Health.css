@@ -57,7 +57,7 @@
   display: block;
 }
 .chart {
-  width: 60%;
+  width: 50%;
   margin-left: 2rem;
 }
 .chart h2 {
@@ -70,7 +70,7 @@
 
 .rights {
   width: 30%;
-  margin-right: 2rem;
+  margin-left: 5rem;
   margin-top: 0.5rem;
 }
 .rights .daily {
@@ -219,4 +219,23 @@
 }
 .bar .progress-line.three span::after{
     content: "67%";
+}
+
+.table{
+  width: 90%;
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+.tit{
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+.title{
+  display: flex;
+  justify-content: space-between;
+}
+.raw{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
 }
