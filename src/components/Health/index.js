@@ -3,6 +3,7 @@ import './Style/Health.css'
 import Insights from './Insights'
 import HealthChart from './HealthChart'
 import Task from './Task'
+import PatientTable from './PatientTable'
 
 export default function Health() {
     return (
@@ -12,6 +13,7 @@ export default function Health() {
             <HealthChart/>
             <Task/>
             </div>
+            <PatientTable/>
         </div>
         
     )
