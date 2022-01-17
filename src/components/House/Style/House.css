@@ -1,0 +1,58 @@
+.Hinsights {
+    display: flex;
+    gap: 1rem;
+    margin-left: 3rem;
+  }
+  
+  .Hinsights > div {
+    background: var(--color-white);
+    padding: 15px 40px;
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+  }
+  .Hinsights > div:hover {
+    box-shadow: none;
+  }
+  
+  .Hinsights > div span {
+    background: var(--color-primary);
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--color-white);
+    font-size: 2rem;
+    margin-left: 10rem;
+  }
+  
+  .Hinsights > div.med span {
+    background: var(--color-success);
+  }
+  
+  .Hinsights > div.road span {
+    background: var(--color-warning);
+  }
+  
+  .Hinsights > div .middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .Hinsights h3 {
+    margin: 1rem 0 0.6rem;
+    font-size: 1rem;
+  }
+  
+  .Hinsights .progress .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Hinsights small {
+    display: block;
+  }
