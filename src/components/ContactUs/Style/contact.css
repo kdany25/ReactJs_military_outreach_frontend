@@ -17,6 +17,9 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: white;
+  margin-left: 10rem;
+
 }
 
 .contacts .content {

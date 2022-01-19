@@ -5,6 +5,7 @@ import DataEntry from "./components/data-entry/dataEntry";
 import ContactUs from "./components/ContactUs";
 import Health from "./components/Health";
 import House from "./components/House";
+import Loginn from './components/user-auth/login'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         </Switch>
       </Layout>
     </Router>
+    // <Loginn/>
   );
 }
 
